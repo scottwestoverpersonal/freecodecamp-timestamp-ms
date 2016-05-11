@@ -1,39 +1,22 @@
-# node-js-getting-started
+# API Basejump: Timestamp microservice
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A NodeJS App that allows a user to pass a string as a parameter to the url and it check to see if is a unix timestamp or a natural date.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+You can view the live demo here: 
 
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+## The Web App Does the Following:
+ - I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
+ - If it does, it returns both the Unix timestamp and the natural language form of that date.
+ - If it does not contain a date or Unix timestamp, it returns null for those properties.
+ 
+ ## Example usage:
+ <code>https://freecodecamp-swestover.herokuapp.com/timestamp-ms?date=January%201,%202016</code>
+ <code>https://freecodecamp-swestover.herokuapp.com/timestamp-ms?date=1451606400</code>
+            
+## Example output:
+<code>
+{
+	"unix": 1451606400,
+	"natural": "December 15, 2015"
+}
+</code>
