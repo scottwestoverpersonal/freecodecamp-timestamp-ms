@@ -2,7 +2,7 @@
 
 A NodeJS App that allows a user to pass a string as a parameter to the url and it check to see if is a unix timestamp or a natural date.
 
-You can view the live demo here: 
+You can view the live demo here: https://freecodecamp-swestover.herokuapp.com/timestamp-ms
 
 ### The Web App Does the Following:
 * I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
