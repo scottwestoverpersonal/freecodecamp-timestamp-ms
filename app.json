@@ -1,0 +1,8 @@
+{
+  "name": "Free Code Camp Backend",
+  "description": "All my projects for the freecodecamp backend cert.",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
