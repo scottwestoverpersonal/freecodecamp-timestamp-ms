@@ -9,9 +9,9 @@ You can view the live demo here:
  - If it does, it returns both the Unix timestamp and the natural language form of that date.
  - If it does not contain a date or Unix timestamp, it returns null for those properties.
  
- ## Example usage:
- <code>https://freecodecamp-swestover.herokuapp.com/timestamp-ms?date=January%201,%202016</code>
- <code>https://freecodecamp-swestover.herokuapp.com/timestamp-ms?date=1451606400</code>
+ ## Example URLs:
+ - https://freecodecamp-swestover.herokuapp.com/timestamp-ms?date=January%201,%202016
+ - https://freecodecamp-swestover.herokuapp.com/timestamp-ms?date=1451606400
             
 ## Example output:
 <code>
